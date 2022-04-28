@@ -1,8 +1,3 @@
-/**
- * This is the base class of Cell. This class is given. You are not supposed to modify this class
- * You are not allowed to modify this class.
- *
- */
 public abstract class Cell {
     protected String name;
 
