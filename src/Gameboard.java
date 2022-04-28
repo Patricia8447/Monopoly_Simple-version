@@ -1,18 +1,5 @@
 import java.util.Scanner;
 
-/**
- * The Gameboard class. This class is given to you already. The implementation of this class is completed.
- * You are not supposed and not allowed to change any part of this class.
- *
- * Gameboard is the mastermind (or controller) of the project. It has cells and players as its data members.
- *
- * To make the assignment be more interesting. We have provided a GUI version of the gameboard which work exactly
- * the same as this class. For testing purpose, we you recommend you work on the command-line version until
- * you program work perfectly fine.
- *
- * In case your program work perfectly fine in command line version but you can't make the GUI work, don't worry about
- * that! We will be grading your work in command line version only.
- */
 public class Gameboard {
 
     /**
