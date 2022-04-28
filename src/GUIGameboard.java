@@ -22,16 +22,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-/**
- * The GUI class
- * @author Kevin Wang
- *
- * There are plenty of room to refactor GUIGameboard to better reuse the code written in Gameboard.
- * Yet, this may probably increase the difficulty for students to understand the class Gameboard.
- * Thus this is written as at the current stage.
- *
- *
- */
+
 public class GUIGameboard extends Application  {
     private static final int CELL_SIZE = 22;
     private Cell[] cells;
@@ -260,8 +251,6 @@ class TextFieldStreamer extends InputStream {
         pos = 0;
         tf.setText("");
         synchronized (this) {
-            //maybe this should only notify() as multiple threads may
-            //be waiting for input and they would now race for input
             this.notify();
         }
     }
@@ -309,7 +298,5 @@ class CustomOutputStream extends OutputStream {
             textArea.setText(textArea.getText() + String.valueOf((char) b));
             textArea.setScrollTop(Double.MAX_VALUE);
         });
-
-
     }
 }
